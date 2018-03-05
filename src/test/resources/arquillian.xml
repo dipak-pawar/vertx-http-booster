@@ -5,6 +5,7 @@
 
   <extension qualifier="openshift">
     <property name="namespace.use.current">true</property>
+    <property name="app.name">http-vertx</property>
     <property name="env.init.enabled">true</property>
     <property name="enableImageStreamDetection">false</property>
   </extension>
