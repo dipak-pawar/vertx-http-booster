@@ -14,15 +14,23 @@
 
   <name>Vert.x - HTTP</name>
   <description>Exposes an HTTP API using Vert.x</description>
-
   <properties>
     <vertx.version>3.5.0</vertx.version>
     <vertx-maven-plugin.version>1.0.13</vertx-maven-plugin.version>
     <vertx.verticle>io.openshift.booster.HttpApplication</vertx.verticle>
+    <arquillian-cube.version>1.15.3-SNAPSHOT</arquillian-cube.version>
   </properties>
+
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.arquillian.cube</groupId>
+        <artifactId>arquillian-cube-bom</artifactId>
+        <version>${arquillian-cube.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
       <dependency>
         <groupId>io.vertx</groupId>
         <artifactId>vertx-dependencies</artifactId>
