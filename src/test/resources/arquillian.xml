@@ -8,6 +8,6 @@
     <property name="env.init.enabled">true</property>
     <property name="enableImageStreamDetection">false</property>
     <property name="app.name">http-vertx</property>
-    <property name="fmp.build">true</property>
+    <property name="cube.fmp.build">true</property>
   </extension>
 </arquillian>
